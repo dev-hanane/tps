@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5e3e0 0%, #e8b4bc 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3a3238;
+}
+
+main, .container {
+  width: 90%;
+  max-width: 750px;
+}
+
+h1 {
+  text-align: center;
+  color: #6e4555;
+  margin: 0 0 40px 0;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(110, 69, 85, 0.15);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 750px;
+}
+
+fieldset {
+  border: 2px solid #d282a6;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background: linear-gradient(to bottom, rgba(245, 227, 224, 0.3), rgba(232, 180, 188, 0.2));
+}
+
+legend {
+  background: #6e4555;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #6e4555;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+input[type="file"],
+textarea,
+input[list] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #e8b4bc;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #3a3238;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+textarea:focus,
+input[list]:focus {
+  border-color: #d282a6;
+  box-shadow: 0 0 8px rgba(210, 130, 166, 0.3);
+  outline: none;
+  background-color: #fafaf9;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  background: linear-gradient(135deg, #d282a6 0%, #6e4555 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(110, 69, 85, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(110, 69, 85, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
