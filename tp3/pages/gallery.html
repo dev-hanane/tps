@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie | ConnectMa</title>
+    <meta name="description" content="Galerie des réalisations ConnectMa - Nos projets innovants pour le Maroc.">
+    <meta property="og:title" content="Galerie - ConnectMa">
+    <meta property="og:description" content="Nos projects et réalisations">
+    <meta property="og:image" content="https://picsum.photos/1200/630?random=9">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <h1>ConnectMa</h1>
+            <nav>
+                <a href="../index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html" class="active">Galerie</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Contenu -->
+    <section class="page-content">
+        <div class="container">
+            <h1>Nos Réalisations</h1>
+            <p class="intro-text">Découvrez les projets innovants de ConnectMa qui transforment le Maroc digital.</p>
+
+            <!-- Galerie avec images responsives (srcset et picture) -->
+            <div class="gallery-grid">
+                <!-- Image 1 : avec srcset -->
+                <div class="gallery-item">
+                    <img 
+                        src="https://picsum.photos/600/400?random=11" 
+                        srcset="
+                            https://picsum.photos/400/300?random=11 480w,
+                            https://picsum.photos/600/400?random=11 768w,
+                            https://picsum.photos/900/600?random=11 1200w"
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        alt="Project 1 - Site vitrine luxe">
+                    <h3>Plateforme ConnectMa Cloud</h3>
+                    <p>Système cloud innovant pour les entreprises</p>
+                </div>
+
+                <!-- Image 2 : avec picture element -->
+                <div class="gallery-item">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="https://picsum.photos/400/300?random=12">
+                        <source media="(max-width: 768px)" srcset="https://picsum.photos/600/400?random=12">
+                        <source media="(min-width: 769px)" srcset="https://picsum.photos/900/600?random=12">
+                        <img src="https://picsum.photos/600/400?random=12" alt="Project 2 - Application Web">
+                    </picture>
+                    <h3>App ConnectMa Mobile</h3>
+                    <p>Application mobile complète pour utilisateurs</p>
+                </div>
+
+                <!-- Image 3 : avec srcset -->
+                <div class="gallery-item">
+                    <img 
+                        src="https://picsum.photos/600/400?random=13"
+                        srcset="
+                            https://picsum.photos/400/300?random=13 480w,
+                            https://picsum.photos/600/400?random=13 768w,
+                            https://picsum.photos/900/600?random=13 1200w"
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        alt="Project 3 - Galerie Photos">
+                    <h3>Infrastructure Fibre ConnectMa</h3>
+                    <p>Connexions ultra-rapides dans les villes marocaines</p>
+                </div>
+
+                <!-- Image 4 : avec picture element -->
+                <div class="gallery-item">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="https://picsum.photos/400/300?random=14">
+                        <source media="(max-width: 768px)" srcset="https://picsum.photos/600/400?random=14">
+                        <source media="(min-width: 769px)" srcset="https://picsum.photos/900/600?random=14">
+                        <img src="https://picsum.photos/600/400?random=14" alt="Project 4 - Blog Magazine">
+                    </picture>
+                    <h3>Centres de Service ConnectMa</h3>
+                    <p>Plus de 30 points de service partout au Maroc</p>
+                </div>
+
+                <!-- Image 5 : avec srcset -->
+                <div class="gallery-item">
+                    <img 
+                        src="https://picsum.photos/600/400?random=15"
+                        srcset="
+                            https://picsum.photos/400/300?random=15 480w,
+                            https://picsum.photos/600/400?random=15 768w,
+                            https://picsum.photos/900/600?random=15 1200w"
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                        alt="Project 5 - Application mobile">
+                    <h3>Services Professionnels</h3>
+                    <p>Solutions dédiées pour les entreprises</p>
+                </div>
+
+                <!-- Image 6 : avec picture element -->
+                <div class="gallery-item">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="https://picsum.photos/400/300?random=16">
+                        <source media="(max-width: 768px)" srcset="https://picsum.photos/600/400?random=16">
+                        <source media="(min-width: 769px)" srcset="https://picsum.photos/900/600?random=16">
+                        <img src="https://picsum.photos/600/400?random=16" alt="Project 6 - Dashboard Analytics">
+                    </picture>
+                    <h3>Support Client 24/7</h3>
+                    <p>Centre d'appels multilingue</p>
+                </div>
+            </div>
+
+            <!-- Section CTA -->
+            <section class="cta-section">
+                <h2>Rejoignez ConnectMa aujourd'hui</h2>
+                <p>Découvrez comment nos services innovants transforment votre expérience digitale.</p>
+                <a href="contact.html" class="btn-primary">Nous contacter</a>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ConnectMa</h3>
+                    <p>Services digitaux innovants pour le Maroc de demain.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Mentions légales</h3>
+                    <ul>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">CGU</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ConnectMa. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+</footer>
+
+</body>
+</html>
